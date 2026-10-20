@@ -82,7 +82,7 @@ main{display:block}
 .page[hidden]{display:none}
 .page.in{animation:fade .38s var(--ease)}
 @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.page h2:focus{outline:none}
+.page h2:focus,.page h1[tabindex]:focus,.page h1[tabindex]:focus-visible{outline:none}
 
 .lead{font-size:clamp(1.125rem,1.6vw,1.3rem);line-height:1.55;color:var(--profond);max-width:34em}
 .muted{color:var(--gris)}
