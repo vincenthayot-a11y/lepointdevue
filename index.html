@@ -14,7 +14,7 @@
 <meta property="og:type" content="restaurant">
 <meta property="og:title" content="Le Point de Vue — Restaurant créole à Sainte-Marie, Martinique">
 <meta property="og:description" content="Cuisine traditionnelle martiniquaise face à l'Atlantique, à l'Anse Charpentier, à côté du Pain de Sucre. Ouvert tous les jours le midi. Groupes jusqu'à 100 personnes.">
-<meta property="og:image" content="https://vincenthayot-a11y.github.io/lepointdevue/img/drone-cote-1.jpg">
+<meta property="og:image" content="https://vincenthayot-a11y.github.io/lepointdevue/img/vue-mer-3-hero.jpg">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Le Point de Vue", "description": "Cuisine traditionnelle martiniquaise face à l'Atlantique, à l'Anse Charpentier, à côté du Pain de Sucre. Ouvert tous les jours le midi. Groupes jusqu'à 100 personnes.", "servesCuisine": ["Créole", "Antillaise"], "address": {"@type": "PostalAddress", "streetAddress": "Anse Charpentier", "postalCode": "97230", "addressLocality": "Sainte-Marie", "addressRegion": "Martinique", "addressCountry": "FR"}, "telephone": "+596696939431", "email": "restaurantlepointdevue@gmail.com", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "12:00", "closes": "14:45"}], "acceptsReservations": true, "priceRange": "€€", "paymentAccepted": "Cash, Credit Card, American Express", "image": "img/drone-cote-1.jpg", "menu": "#carte", "sameAs": ["https://www.facebook.com/RestaurantLepointdevue", "https://www.instagram.com/lepointdevue972/"], "award": ["Gault & Millau 2018", "Gault & Millau 2020"]}</script>
@@ -278,6 +278,9 @@ figcaption{font-size:.9375rem;color:var(--gris);margin-top:10px}
   .menu{padding:22px 18px;outline-offset:-7px}
   .l .x{font-size:.9375rem}
 }
+.ifaits .faits{grid-template-columns:repeat(5,1fr)}
+@media (max-width:1060px){.ifaits .faits{grid-template-columns:repeat(3,1fr)}.ifaits .faits>*:nth-child(4){border-left:0;padding-left:0}.ifaits .faits>*:nth-child(n+4){border-top:1px solid rgba(6,98,45,.3)}.ifaits .faits>*:nth-child(3){border-top:0}}
+@media (max-width:860px){.ifaits .faits{grid-template-columns:1fr 1fr}.ifaits .faits>*:nth-child(odd){padding-left:0;border-left:0}.ifaits .faits>*:nth-child(even){padding-left:16px;border-left:1px solid rgba(6,98,45,.3)}.ifaits .faits>*:nth-child(n+3){border-top:1px solid rgba(6,98,45,.3)}.ifaits .faits>*:nth-child(5){grid-column:1/-1;border-left:0;padding-left:0}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
@@ -292,7 +295,7 @@ section[id]{scroll-margin-top:110px}
 .ihero{margin-top:-20px}
 @media (max-width:760px){.ihero{margin-top:-16px}}
 .ihero-media{position:absolute;inset:0}
-.ihero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.ihero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
 .ihero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,56,24,.15) 0%,rgba(5,56,24,.05) 30%,rgba(5,56,24,.6) 62%,rgba(5,56,24,.9) 100%)}
 .ihero-inner{position:relative;z-index:1;width:100%;padding-top:48px;padding-bottom:clamp(36px,8vh,80px)}
 .ihero h1{color:var(--blanc);font-size:clamp(2.4rem,5.6vw,4.6rem);max-width:13ch;text-shadow:0 2px 24px rgba(5,56,24,.5)}
@@ -388,13 +391,13 @@ section[id]{scroll-margin-top:110px}
 <!-- ================= ACCUEIL ================= -->
 <section class="page" id="accueil" aria-labelledby="t-accueil">
   <div class="ihero">
-    <div class="ihero-media"><picture class="pic-hero"><source media="(max-width:760px)" srcset="img/lieu-anse-charpentier-rocher-cocotiers.jpg"><img src="img/drone-cote-1.jpg" alt="Vue aérienne de la côte de Sainte-Marie : la mer, les vagues et le rocher au large, bordés de végétation" width="1800" height="1349" fetchpriority="high"></picture></div>
+    <div class="ihero-media"><picture class="pic-hero"><source media="(max-width:760px)" srcset="img/lieu-anse-charpentier-rocher-cocotiers.jpg"><img src="img/vue-mer-3-hero.jpg" alt="La plage de l'Anse Charpentier et le Pain de Sucre, vus depuis les cocotiers du restaurant" width="1800" height="992" fetchpriority="high"></picture></div>
     <div class="wrap ihero-inner">
       <div class="ihero-content">
         <h1 id="t-accueil" tabindex="-1">Un site, une table, une cuisine.</h1>
-        <p class="lead">Restaurant créole à l'Anse Charpentier, Sainte-Marie. Cuisine traditionnelle martiniquaise face à l'Atlantique, terrasse ombragée sous les cocotiers, au bord de la baie des surfeurs, à côté du Pain de Sucre.</p>
+        <p class="lead">Une table créole les pieds dans l'herbe, face à l'Atlantique et au Pain de Sucre. Cuisine maison, assiettes généreuses, tous les midis.</p>
         <div class="actions">
-          <a class="btn btn-jaune" href="#infos">Réserver</a>
+          <a class="btn btn-jaune" href="#infos">Réserver par téléphone</a>
           <a class="btn btn-ligne" href="#carte">Voir la carte</a>
         </div>
         <p class="hint" aria-hidden="true">Faites défiler</p>
@@ -404,19 +407,20 @@ section[id]{scroll-margin-top:110px}
 
   <div class="ifaits"><div class="wrap">
     <div class="faits">
-      <div><span>Ouvert tous les jours</span><b>12 h – 14 h 45</b></div>
+      <div><span>Tous les midis</span><b>12 h – 14 h 45</b></div>
       <div><span>Groupes jusqu'à</span><b>100 personnes</b></div>
       <div><span>Formules dès</span><b>26 €</b></div>
+      <div><span>Menu enfant</span><b>15 €</b></div>
       <div class="note-g"><a href="https://www.google.com/maps/place/?q=place_id:ChIJfdfM7ia8aowRIc_dXcqTo8I" target="_blank" rel="noopener"><span>Note Google</span><b>4,6/5<span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><use href="#star"/></svg><svg viewBox="0 0 20 20"><use href="#star"/></svg><svg viewBox="0 0 20 20"><use href="#star"/></svg><svg viewBox="0 0 20 20"><use href="#star"/></svg><svg viewBox="0 0 20 20"><use href="#star"/></svg></span></b><span>plus de 1 600 avis</span></a><span class="gm">Gault &amp; Millau 2018 · 2020</span></div>
     </div>
   </div></div>
 
   <div class="chap" data-chap>
-    <div class="chap-media"><div class="chap-sticky"><picture><source media="(max-width:760px)" srcset="img/drone-restaurant-plongee.jpg"><img src="img/drone-mer-et-restaurant.jpg" alt="Le restaurant vu du ciel, au-dessus de la mer et de la plage" loading="lazy" width="1800" height="1013"></picture></div></div>
+    <div class="chap-media"><div class="chap-sticky"><picture><source media="(max-width:760px)" srcset="img/drone-jardin.jpg"><img src="img/vue-mer-2-grand.jpg" alt="La mer et la plage vues depuis le jardin du restaurant" loading="lazy" width="1800" height="992"></picture></div></div>
     <div class="chap-text">
       <div class="chap-card">
         <p class="chap-word"><span class="w">Un</span> <span class="w">site,</span></p>
-        <p>L'Anse Charpentier, à Sainte-Marie. Au bord de la baie des surfeurs, à côté du Pain de Sucre.</p>
+        <p>L'Anse Charpentier, à Sainte-Marie : la plage des surfeurs, le Pain de Sucre, et le restaurant posé juste au-dessus.</p>
       </div>
     </div>
   </div>
@@ -425,17 +429,17 @@ section[id]{scroll-margin-top:110px}
     <div class="chap-text">
       <div class="chap-card clair">
         <p class="chap-word"><span class="w">une</span> <span class="w">table,</span></p>
-        <p>Une terrasse ombragée sous les cocotiers. L'Atlantique depuis votre table.</p>
+        <p>Une terrasse à l'ombre des cocotiers, et l'Atlantique depuis votre chaise.</p>
         <p class="chap-meta">Groupes jusqu'à 100 personnes</p>
       </div>
     </div>
   </div>
-  <div class="chap" data-chap>
-    <div class="chap-media"><div class="chap-sticky"><img src="img/equipe-salle.jpg" alt="L'équipe du restaurant dans le jardin, assiettes en main" loading="lazy" width="1800" height="1200" style="object-position:50% 40%"></div></div>
+  <div class="chap right" data-chap>
+    <div class="chap-media"><div class="chap-sticky"><img src="img/monique-preparation.jpg" alt="En cuisine, la préparation des plats du jour" loading="lazy" width="1200" height="1800" style="object-position:35% 12%"></div></div>
     <div class="chap-text">
       <div class="chap-card">
         <p class="chap-word"><span class="w">une</span> <span class="w">cuisine.</span></p>
-        <p>L'équipe de cuisine, autour de Monique. La tradition martiniquaise, des accras croustillants aux écrevisses.</p>
+        <p>Accras de morue, colombo, fricassée de chatrou, écrevisses : la cuisine créole faite maison, par l'équipe de Monique.</p>
       </div>
     </div>
   </div>
@@ -451,7 +455,7 @@ section[id]{scroll-margin-top:110px}
         <figure data-scale><div class="photo"><img src="img/plat-ecrevisses-madras.jpg" alt="Écrevisses grillées, riz créole et lentilles" width="1800" height="1350" loading="lazy"></div><figcaption>Écrevisses grillées.</figcaption></figure>
         <figure data-scale><div class="photo"><img src="img/plat-poisson-grille-madras.jpg" alt="Poisson grillé, riz créole et lentilles sur la nappe madras" width="1800" height="1350" loading="lazy"></div><figcaption>Poisson grillé, sauce chien.</figcaption></figure>
         <figure data-scale><div class="photo"><img src="img/plat-accras.jpg" alt="Accras de morue et poisson à la tahitienne sur une nappe madras" width="1800" height="1350" loading="lazy"></div><figcaption>Accras de morue et poisson à la tahitienne.</figcaption></figure>
-        <figure data-scale><div class="photo"><img src="img/plats-table-pelouse-vue-mer.jpg" alt="Une table sur la pelouse, plats servis, la mer derrière les cocotiers" width="1350" height="1800" loading="lazy"></div><figcaption>Une table sur la pelouse, face à la mer.</figcaption></figure>
+        <figure data-scale><div class="photo"><img src="img/plat-colombo.jpg" alt="Colombo de poulet, riz créole et lentilles" width="1800" height="1350" loading="lazy"></div><figcaption>Colombo de poulet.</figcaption></figure>
       </div>
     </div>
 
@@ -482,10 +486,10 @@ section[id]{scroll-margin-top:110px}
   <div class="finale">
     <div class="finale-media"><img src="img/equipe-2.jpg" alt="Toute l'équipe devant la mer, plats en main" loading="lazy" width="1800" height="1350"></div>
     <div class="wrap">
-      <h2>Une équipe aux petits soins.</h2>
-      <p>Tous les jours de 12 h à 14 h 45. Réservation vivement conseillée, même en semaine.</p>
+      <h2>À tout à l'heure, à l'Anse Charpentier.</h2>
+      <p>Tous les midis, de 12 h à 14 h 45. Pensez à réserver, même en semaine.</p>
       <div class="actions">
-        <a class="btn btn-jaune" href="#infos">Réserver</a>
+        <a class="btn btn-jaune" href="#infos">Réserver par téléphone</a>
         <a class="btn btn-ligne" href="#groupes">Venir en groupe</a>
       </div>
     </div>
@@ -497,7 +501,7 @@ section[id]{scroll-margin-top:110px}
   <div class="wrap">
     <div class="sec-head">
       <h2 class="h2" id="t-carte" tabindex="-1">La carte</h2>
-      <p class="muted">Cuisine traditionnelle martiniquaise. Service du midi, tous les jours.</p>
+      <p class="muted">Tout est fait maison. Prix nets, service compris.</p>
     </div>
 
     <p class="pdj" style="margin:0 0 28px;padding:14px 18px;background:#FAF6E6;border-left:4px solid #F5BC33;border-radius:2px;max-width:46em;color:#053818;line-height:1.5"><strong style="font-family:'Young Serif',Georgia,serif;font-weight:400;font-size:1.15em;color:#06622D">Plats du jour.</strong> En plus de la carte, nous proposons régulièrement des plats du jour&nbsp;: demandez-les à votre table.</p>
@@ -535,7 +539,7 @@ section[id]{scroll-margin-top:110px}
             </div>
             <p class="pied">Tous les plats sont servis avec riz créole et légumes pays, haricots rouges ou lentilles selon le jour, et gratin ou mousseline du jour.</p>
           </div>
-          <div class="photo mob"><img src="img/plat-poisson-madras.jpg" alt="Poisson grillé servi avec riz et légumes, sur une nappe madras" width="1800" height="1350" loading="lazy"></div>
+          <div class="photo mob"><img src="img/plat-accras-2.jpg" alt="Accras de morue servis avec des crudités" width="1800" height="1316" loading="lazy"></div>
         </div>
       </div>
 
@@ -675,7 +679,7 @@ section[id]{scroll-margin-top:110px}
           <li>Groupes de visiteurs en excursion</li>
         </ul>
       </div>
-      <figure class="photo" style="margin:0;aspect-ratio:4/3"><img src="img/carbet-tables.jpg" alt="Le grand carbet au toit de paille, tables et chaises dressées sous la charpente" width="1800" height="1350" loading="lazy"></figure>
+      <figure class="photo" style="margin:0;aspect-ratio:4/3"><img src="img/restaurant-salle-tables-dressees.jpg" alt="Le grand carbet, tables et chaises dressées pour un repas de groupe" width="1800" height="1350" loading="lazy"></figure>
     </div>
 
     <div class="sec devis">
@@ -693,7 +697,7 @@ section[id]{scroll-margin-top:110px}
       </div>
     </div>
 
-    <figure class="sec photo" style="aspect-ratio:16/7;margin-left:0;margin-right:0;margin-bottom:0"><img src="img/drone-restaurant-1.jpg" alt="Le restaurant vu d'en haut, entouré de jardins et de cocotiers" width="1800" height="1349" loading="lazy"></figure>
+    <figure class="sec photo" style="aspect-ratio:16/7;margin-left:0;margin-right:0;margin-bottom:0"><img src="img/drone-jardin.jpg" alt="Le jardin du restaurant vu du ciel, au bord de la plage" width="1800" height="1349" loading="lazy"></figure>
   </div>
 </section>
 
@@ -745,7 +749,7 @@ section[id]{scroll-margin-top:110px}
 
 <div class="bandeau">
   <div class="wrap">
-    <p><strong>Ouvert tous les jours, 12 h – 14 h 45</strong></p>
+    <p><strong>Ouvert tous les midis, 12 h – 14 h 45</strong></p>
     <p>Réservation vivement conseillée <span class="sep">·</span> <span style="white-space:nowrap">0696 93 94 31</span></p>
   </div>
 </div>

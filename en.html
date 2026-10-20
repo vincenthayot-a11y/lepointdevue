@@ -11,7 +11,7 @@
 <meta property="og:type" content="restaurant">
 <meta property="og:title" content="Le Point de Vue — Creole restaurant in Sainte-Marie, Martinique">
 <meta property="og:description" content="Traditional Martinican cooking facing the Atlantic, at Anse Charpentier, next to the Pain de Sucre. Open every day for lunch. Groups of up to 100.">
-<meta property="og:image" content="https://vincenthayot-a11y.github.io/lepointdevue/img/drone-cote-1.jpg">
+<meta property="og:image" content="https://vincenthayot-a11y.github.io/lepointdevue/img/vue-mer-3-hero.jpg">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Le Point de Vue", "description": "Traditional Martinican cooking facing the Atlantic, at Anse Charpentier, next to the Pain de Sucre. Open every day for lunch. Groups of up to 100.", "servesCuisine": ["Creole", "Caribbean"], "address": {"@type": "PostalAddress", "streetAddress": "Anse Charpentier", "postalCode": "97230", "addressLocality": "Sainte-Marie", "addressRegion": "Martinique", "addressCountry": "FR"}, "telephone": "+596696939431", "email": "restaurantlepointdevue@gmail.com", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "12:00", "closes": "14:45"}], "acceptsReservations": true, "priceRange": "€€", "paymentAccepted": "Cash, Credit Card, American Express", "image": "img/drone-cote-1.jpg", "menu": "#carte", "sameAs": ["https://www.facebook.com/RestaurantLepointdevue", "https://www.instagram.com/lepointdevue972/"], "award": ["Gault & Millau 2018", "Gault & Millau 2020"]}</script>
@@ -278,6 +278,9 @@ figcaption{font-size:.9375rem;color:var(--gris);margin-top:10px}
   .menu{padding:22px 18px;outline-offset:-7px}
   .l .x{font-size:.9375rem}
 }
+.ifaits .faits{grid-template-columns:repeat(5,1fr)}
+@media (max-width:1060px){.ifaits .faits{grid-template-columns:repeat(3,1fr)}.ifaits .faits>*:nth-child(4){border-left:0;padding-left:0}.ifaits .faits>*:nth-child(n+4){border-top:1px solid rgba(6,98,45,.3)}.ifaits .faits>*:nth-child(3){border-top:0}}
+@media (max-width:860px){.ifaits .faits{grid-template-columns:1fr 1fr}.ifaits .faits>*:nth-child(odd){padding-left:0;border-left:0}.ifaits .faits>*:nth-child(even){padding-left:16px;border-left:1px solid rgba(6,98,45,.3)}.ifaits .faits>*:nth-child(n+3){border-top:1px solid rgba(6,98,45,.3)}.ifaits .faits>*:nth-child(5){grid-column:1/-1;border-left:0;padding-left:0}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
@@ -292,7 +295,7 @@ section[id]{scroll-margin-top:110px}
 .ihero{margin-top:-20px}
 @media (max-width:760px){.ihero{margin-top:-16px}}
 .ihero-media{position:absolute;inset:0}
-.ihero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.ihero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
 .ihero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,56,24,.15) 0%,rgba(5,56,24,.05) 30%,rgba(5,56,24,.6) 62%,rgba(5,56,24,.9) 100%)}
 .ihero-inner{position:relative;z-index:1;width:100%;padding-top:48px;padding-bottom:clamp(36px,8vh,80px)}
 .ihero h1{color:var(--blanc);font-size:clamp(2.4rem,5.6vw,4.6rem);max-width:13ch;text-shadow:0 2px 24px rgba(5,56,24,.5)}
@@ -388,13 +391,13 @@ section[id]{scroll-margin-top:110px}
 <!-- ================= ACCUEIL ================= -->
 <section class="page" id="accueil" aria-labelledby="t-accueil">
   <div class="ihero">
-    <div class="ihero-media"><picture class="pic-hero"><source media="(max-width:760px)" srcset="img/lieu-anse-charpentier-rocher-cocotiers.jpg"><img src="img/drone-cote-1.jpg" alt="Aerial view of the Sainte-Marie coast: the sea, the waves and the rock offshore, lined with greenery" width="1800" height="1349" fetchpriority="high"></picture></div>
+    <div class="ihero-media"><picture class="pic-hero"><source media="(max-width:760px)" srcset="img/lieu-anse-charpentier-rocher-cocotiers.jpg"><img src="img/vue-mer-3-hero.jpg" alt="Anse Charpentier beach and the Pain de Sucre, seen from the restaurant's coconut palms" width="1800" height="992" fetchpriority="high"></picture></div>
     <div class="wrap ihero-inner">
       <div class="ihero-content">
         <h1 id="t-accueil" tabindex="-1">A place,<br>a table,<br>a cuisine.</h1>
-        <p class="lead">Creole restaurant at Anse Charpentier, Sainte-Marie. Traditional Martinique cooking facing the Atlantic, a shaded terrace under the coconut palms, on the edge of the surfers’ bay, next to the Pain de Sucre.</p>
+        <p class="lead">A Creole table on the grass, facing the Atlantic and the Pain de Sucre. Home cooking, generous plates, every lunchtime.</p>
         <div class="actions">
-          <a class="btn btn-jaune" href="#infos">Book a table</a>
+          <a class="btn btn-jaune" href="#infos">Book by phone</a>
           <a class="btn btn-ligne" href="#carte">See the menu</a>
         </div>
         <p class="hint" aria-hidden="true">Scroll</p>
@@ -404,19 +407,20 @@ section[id]{scroll-margin-top:110px}
 
   <div class="ifaits"><div class="wrap">
     <div class="faits">
-      <div><span>Open every day</span><b>12:00 – 2:45 pm</b></div>
+      <div><span>Every lunchtime</span><b>12:00 – 2:45 pm</b></div>
       <div><span>Groups of up to</span><b>100 people</b></div>
       <div><span>Set menus from</span><b>26 €</b></div>
+      <div><span>Children's menu</span><b>15 €</b></div>
       <div class="note-g"><a href="https://www.google.com/maps/place/?q=place_id:ChIJfdfM7ia8aowRIc_dXcqTo8I" target="_blank" rel="noopener"><span>Google rating</span><b>4.6/5<span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><use href="#star"/></svg><svg viewBox="0 0 20 20"><use href="#star"/></svg><svg viewBox="0 0 20 20"><use href="#star"/></svg><svg viewBox="0 0 20 20"><use href="#star"/></svg><svg viewBox="0 0 20 20"><use href="#star"/></svg></span></b><span>over 1,600 reviews</span></a><span class="gm">Gault &amp; Millau 2018 · 2020</span></div>
     </div>
   </div></div>
 
   <div class="chap" data-chap>
-    <div class="chap-media"><div class="chap-sticky"><picture><source media="(max-width:760px)" srcset="img/drone-restaurant-plongee.jpg"><img src="img/drone-mer-et-restaurant.jpg" alt="The restaurant seen from the sky, above the sea and the beach" loading="lazy" width="1800" height="1013"></picture></div></div>
+    <div class="chap-media"><div class="chap-sticky"><picture><source media="(max-width:760px)" srcset="img/drone-jardin.jpg"><img src="img/vue-mer-2-grand.jpg" alt="The sea and the beach seen from the restaurant garden" loading="lazy" width="1800" height="992"></picture></div></div>
     <div class="chap-text">
       <div class="chap-card">
         <p class="chap-word"><span class="w">A</span> <span class="w">place,</span></p>
-        <p>Anse Charpentier, in Sainte-Marie. On the edge of the surfers’ bay, next to the Pain de Sucre.</p>
+        <p>Anse Charpentier, in Sainte-Marie: the surfers' beach, the Pain de Sucre, and the restaurant set just above.</p>
       </div>
     </div>
   </div>
@@ -425,17 +429,17 @@ section[id]{scroll-margin-top:110px}
     <div class="chap-text">
       <div class="chap-card clair">
         <p class="chap-word"><span class="w">a</span> <span class="w">table,</span></p>
-        <p>A terrace shaded by coconut palms. The Atlantic from your table.</p>
+        <p>A terrace in the shade of the coconut palms, and the Atlantic from your chair.</p>
         <p class="chap-meta">Groups of up to 100 people</p>
       </div>
     </div>
   </div>
-  <div class="chap" data-chap>
-    <div class="chap-media"><div class="chap-sticky"><img src="img/equipe-salle.jpg" alt="The restaurant team in the garden, plates in hand" loading="lazy" width="1800" height="1200" style="object-position:50% 40%"></div></div>
+  <div class="chap right" data-chap>
+    <div class="chap-media"><div class="chap-sticky"><img src="img/monique-preparation.jpg" alt="In the kitchen, preparing the dishes of the day" loading="lazy" width="1200" height="1800" style="object-position:35% 12%"></div></div>
     <div class="chap-text">
       <div class="chap-card">
         <p class="chap-word"><span class="w">a</span> <span class="w">cuisine.</span></p>
-        <p>The kitchen team, around Monique. Martinique tradition, from crisp accras to écrevisses.</p>
+        <p>Accras de morue, colombo, fricassée de chatrou, écrevisses: home-made Creole cooking by Monique's team.</p>
       </div>
     </div>
   </div>
@@ -451,7 +455,7 @@ section[id]{scroll-margin-top:110px}
         <figure data-scale><div class="photo"><img src="img/plat-ecrevisses-madras.jpg" alt="Grilled écrevisses, Creole rice and lentils" width="1800" height="1350" loading="lazy"></div><figcaption>Grilled écrevisses (freshwater crayfish).</figcaption></figure>
         <figure data-scale><div class="photo"><img src="img/plat-poisson-grille-madras.jpg" alt="Grilled fish, Creole rice and lentils on the madras cloth" width="1800" height="1350" loading="lazy"></div><figcaption>Grilled fish, sauce chien.</figcaption></figure>
         <figure data-scale><div class="photo"><img src="img/plat-accras.jpg" alt="Accras de morue and poisson à la tahitienne on a madras tablecloth" width="1800" height="1350" loading="lazy"></div><figcaption>Accras de morue and poisson à la tahitienne.</figcaption></figure>
-        <figure data-scale><div class="photo"><img src="img/plats-table-pelouse-vue-mer.jpg" alt="A table on the lawn, dishes served, the sea behind the palms" width="1350" height="1800" loading="lazy"></div><figcaption>A table on the lawn, facing the sea.</figcaption></figure>
+        <figure data-scale><div class="photo"><img src="img/plat-colombo.jpg" alt="Colombo de poulet, Creole rice and lentils" width="1800" height="1350" loading="lazy"></div><figcaption>Colombo de poulet.</figcaption></figure>
       </div>
     </div>
 
@@ -482,10 +486,10 @@ section[id]{scroll-margin-top:110px}
   <div class="finale">
     <div class="finale-media"><img src="img/equipe-2.jpg" alt="The whole team in front of the sea, dishes in hand" loading="lazy" width="1800" height="1350"></div>
     <div class="wrap">
-      <h2>A team that takes good care of you.</h2>
-      <p>Every day from 12:00 to 2:45 pm. Booking strongly recommended, even on weekdays.</p>
+      <h2>See you at Anse Charpentier.</h2>
+      <p>Every lunchtime, 12:00 – 2:45 pm. Please book ahead, even on weekdays.</p>
       <div class="actions">
-        <a class="btn btn-jaune" href="#infos">Book a table</a>
+        <a class="btn btn-jaune" href="#infos">Book by phone</a>
         <a class="btn btn-ligne" href="#groupes">Come as a group</a>
       </div>
     </div>
@@ -497,7 +501,7 @@ section[id]{scroll-margin-top:110px}
   <div class="wrap">
     <div class="sec-head">
       <h2 class="h2" id="t-carte" tabindex="-1">Menu</h2>
-      <p class="muted">Traditional Martinique cooking. Lunch service, every day.</p>
+      <p class="muted">Everything is home-made. Prices are net, service included.</p>
     </div>
 
     <p class="pdj" style="margin:0 0 28px;padding:14px 18px;background:#FAF6E6;border-left:4px solid #F5BC33;border-radius:2px;max-width:46em;color:#053818;line-height:1.5"><strong style="font-family:'Young Serif',Georgia,serif;font-weight:400;font-size:1.15em;color:#06622D">Dishes of the day.</strong> Alongside the menu, we regularly offer dishes of the day: just ask at your table.</p>
@@ -535,7 +539,7 @@ section[id]{scroll-margin-top:110px}
             </div>
             <p class="pied">All dishes are served with Creole rice and local vegetables, red beans or lentils depending on the day, and the gratin or mash of the day.</p>
           </div>
-          <div class="photo mob"><img src="img/plat-poisson-madras.jpg" alt="Grilled fish served with rice and vegetables, on a madras tablecloth" width="1800" height="1350" loading="lazy"></div>
+          <div class="photo mob"><img src="img/plat-accras-2.jpg" alt="Accras de morue served with crudités" width="1800" height="1316" loading="lazy"></div>
         </div>
       </div>
 
@@ -675,7 +679,7 @@ section[id]{scroll-margin-top:110px}
           <li>Groups of visitors on excursions</li>
         </ul>
       </div>
-      <figure class="photo" style="margin:0;aspect-ratio:4/3"><img src="img/carbet-tables.jpg" alt="The large thatched carbet, tables and chairs set under the timber frame" width="1800" height="1350" loading="lazy"></figure>
+      <figure class="photo" style="margin:0;aspect-ratio:4/3"><img src="img/restaurant-salle-tables-dressees.jpg" alt="The large carbet, tables and chairs set for a group lunch" width="1800" height="1350" loading="lazy"></figure>
     </div>
 
     <div class="sec devis">
@@ -693,7 +697,7 @@ section[id]{scroll-margin-top:110px}
       </div>
     </div>
 
-    <figure class="sec photo" style="aspect-ratio:16/7;margin-left:0;margin-right:0;margin-bottom:0"><img src="img/drone-restaurant-1.jpg" alt="The restaurant seen from above, surrounded by gardens and coconut palms" width="1800" height="1349" loading="lazy"></figure>
+    <figure class="sec photo" style="aspect-ratio:16/7;margin-left:0;margin-right:0;margin-bottom:0"><img src="img/drone-jardin.jpg" alt="The restaurant garden from the sky, by the beach" width="1800" height="1349" loading="lazy"></figure>
   </div>
 </section>
 
@@ -745,7 +749,7 @@ section[id]{scroll-margin-top:110px}
 
 <div class="bandeau">
   <div class="wrap">
-    <p><strong>Open every day, 12:00 – 2:45 pm</strong></p>
+    <p><strong>Open every lunchtime, 12:00 – 2:45 pm</strong></p>
     <p>Booking strongly recommended <span class="sep">·</span> <span style="white-space:nowrap">0696 93 94 31</span></p>
   </div>
 </div>
