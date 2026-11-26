@@ -216,6 +216,8 @@ figcaption{font-size:.9375rem;color:var(--gris);margin-top:10px}
 .resa .grp h4{font:400 1.15rem/1.3 var(--serif);color:var(--vert);margin:0 0 6px}
 .resa .grp p{margin:0}
 .resa .grp .actions{margin-top:12px}
+@media (max-width:420px){.resa .grp .mail{font-size:.98rem}}
+.resa .grp .mail{display:inline-block;margin-top:8px;font:400 clamp(1rem,2.2vw,1.35rem)/1.3 var(--serif);letter-spacing:-.01em;color:var(--vert);text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
 .resa .intl{font-size:.92rem;margin-top:-.4em}
 .fiche{display:grid;gap:0;margin-top:clamp(28px,4vw,40px)}
 .fiche>div{padding:22px 0;border-top:1px solid var(--filet);display:grid;grid-template-columns:150px 1fr;gap:6px 24px}
@@ -737,7 +739,9 @@ section[id]{scroll-margin-top:110px}
           <div class="grp">
             <h4>Groups of 12 or more</h4>
             <p class="muted">Please book by e-mail, so we can offer you a group rate.</p>
-            <div class="actions"><a class="btn btn-ligne" href="mailto:restaurantlepointdevue@gmail.com?subject=Group%20booking%20quote">E-mail us for a group</a></div>
+            <a class="mail" id="email-resa" href="mailto:restaurantlepointdevue@gmail.com?subject=Group%20booking%20quote">restaurantlepointdevue@gmail.com</a>
+            <div class="actions"><a class="btn btn-ligne" href="mailto:restaurantlepointdevue@gmail.com?subject=Group%20booking%20quote">Send an e-mail</a><button class="btn btn-ligne" type="button" data-copy="email-resa" data-label="Copy the address">Copy the address</button></div>
+            <p class="status" role="status" aria-live="polite"></p>
           </div>
         </div>
 
